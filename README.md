@@ -3,20 +3,13 @@ Accosa Payment Gateway woocommerce plugin for Paystage Inc, Paystage support man
 
 === ACCOSA payment gateway ===
 
-Contributors: Siyalude Business Solutions
-
-Donate link: 
-
-Tags: Paystage, ACCOSA-PG, WooCommerce, Payment Gateway, Seylan , Seylan Bank , Seyalan Bank Srilanka, Sampath , Sampath Bank , Sampath Bank Srilanka
-
-Requires at least: 3.9
-
-Tested up to: 4.0
-
-Stable tag: 1.3.7
-
-License: GPLv3 or later
-
+Contributors: Indunil Peramuna @ Siyalude Business Solutions  
+Donate link:  
+Tags: Paystage, ACCOSA-PG, WooCommerce, Payment Gateway, Seylan , Seylan Bank , Seyalan Bank Srilanka, Sampath , Sampath Bank , Sampath Bank Srilanka  
+Requires at least: 3.9  
+Tested up to: 4.0  
+Stable tag: 1.3.7  
+License: GPLv3 or later  
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 WooCommerce ACCOSA payment gateway. Make your online payments via Seylan Bank or Sampath or Any Bank who support ACCOSA Payment Gateway By enStage Inc.
