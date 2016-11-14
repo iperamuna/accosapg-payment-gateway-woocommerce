@@ -46,6 +46,7 @@ Funds are automatically deposited into your respective merchant bank account wit
 
 Free and fast support service
 
+Response Url : http://yoursite.com/?wc-api=accosapg ( Replace yoursite.com with your domain url)
 
 ==Requirements==
 

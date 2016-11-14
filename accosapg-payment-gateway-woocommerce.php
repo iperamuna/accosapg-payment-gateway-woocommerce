@@ -13,6 +13,7 @@ function woocommerce_siyalude_accosapg_init(){
 
 	class WC_Siyalude_Accosapg extends WC_Payment_Gateway{
 		public function __construct(){
+
 			$this->id = 'accosapg';
 			$this->medthod_title = 'ACCOSA-PG';
 			$this->has_fields = false;
@@ -37,7 +38,8 @@ function woocommerce_siyalude_accosapg_init(){
 			$this->msg['message'] = "";
 			$this->msg['class'] = "";
 
-			add_action('init', array(&$this, 'check_accosapg_response'));
+			add_action('woocommerce_api_accosapg', array(&$this, 'check_accosapg_response'));
+
 			if ( version_compare( WOOCOMMERCE_VERSION, '2.0.0', '>=' ) ) {
 				add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( &$this, 'process_admin_options' ) );
 			} else {
@@ -130,8 +132,7 @@ function woocommerce_siyalude_accosapg_init(){
 					'title' => __('Fail redirect URL :', 'siyalude'),
 					'type' => 'select',
 					'options' => $this -> get_pages('Select Page'),
-					'description' => __('After payment if there is an error redirecting to this page.', 'siyalude')),
-
+					'description' => __('After payment if there is an error redirecting to this page.', 'siyalude'))
 			);
 		}
 
@@ -256,6 +257,7 @@ function woocommerce_siyalude_accosapg_init(){
 			global $woocommerce;
 
 			if(isset($_POST['transaction_type_code']) && isset($_POST['status']) && isset($_POST['merchant_reference_no'])){
+
 				$order_id = $_POST['merchant_reference_no'];
 
 				if($order_id != ''){
