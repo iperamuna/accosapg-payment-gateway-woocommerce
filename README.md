@@ -69,7 +69,7 @@ SSL certificate for the web hosting account (recommended but not a necessity)
 
 == Configuration ==
 
-Provided below are the facets to be done for configuration of Seyalan Bank online payment gateway plugin
+Provided below are the facets to be done for configuration of ACCOSA payment gateway plugin
 
 Visit WooCommerce > Settings > Checkout Tab
 
@@ -77,7 +77,7 @@ Click on "ACCOSA-PG*" to edit the settings. If you do not see "ACCOSA-PG" in the
 
 Enable the Payment Method; name it Credit Card / Debit Card / Internet Banking (this will be displayed on the payment webpage your users will be viewing)
 
-Add in your Merchant ID, Instance ID and Hash Key as provided by the Seyalan IPG Team
+Add in your Merchant ID, Instance ID and Hash Key as provided by the Bank or Financial Instiutes eCommerce Team
 
 Add Success redirect URL and Fail redirect URL (URL you want to redirect after payment)
 
@@ -86,9 +86,9 @@ Click Save
 
 == Screenshots ==
 
-1. All relevant account information details are set in the above shown panel. Merchant ID, Instance ID and Hash Keys are provided by Seyalan Bank.
-2. Displayed above are the "Checkout Page" payment options, inclusive of Seyalan IPG, offered to users for selection.
-3. Featured above is the plugin page view containing the "Seyalan Bank IPG" option. Make sure to activate this option from the available plugin page.
+1. All relevant account information details are set in the above shown panel. Merchant ID, Instance ID and Hash Keys are provided by Bank or Financial Instiutes eCommerce Team.
+2. Displayed above are the "Checkout Page" payment options, inclusive of ACCOSA-PG, offered to users for selection.
+3. Featured above is the plugin page view containing the "ACCOSA-PG" option. Make sure to activate this option from the available plugin page.
 
 == Changelog ==
 No recent changes
