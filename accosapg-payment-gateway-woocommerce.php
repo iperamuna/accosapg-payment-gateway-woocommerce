@@ -13,13 +13,14 @@ function woocommerce_siyalude_accosapg_init(){
 
 	class WC_Siyalude_Accosapg extends WC_Payment_Gateway{
 		public function __construct(){
-			$this->id = 'accosa-pg';
+			$this->id = 'accosapg';
 			$this->medthod_title = 'ACCOSA-PG';
 			$this->has_fields = false;
 
 			$this->init_form_fields();
 			$this->init_settings();
 
+			$this->icon 				= $this->settings['icon'];
 			$this->title 				= $this->settings['title'];
 			$this->description 		= $this->settings['description'];
 			$this->merchant_id 		= $this->settings['merchant_id'];
@@ -42,7 +43,7 @@ function woocommerce_siyalude_accosapg_init(){
 			} else {
 				add_action( 'woocommerce_update_options_payment_gateways', array( &$this, 'process_admin_options' ) );
 			}
-			add_action('woocommerce_receipt_payu', array(&$this, 'receipt_page'));
+			add_action('woocommerce_receipt_accosapg', array(&$this, 'receipt_page'));
 		}
 		function init_form_fields(){
 
@@ -58,6 +59,12 @@ function woocommerce_siyalude_accosapg_init(){
 					'type'=> 'text',
 					'description' => __('This controls the title which the user sees during checkout.', 'siyalude'),
 					'default' => __('Your Banks Name', 'siyalude')),
+
+				'icon' => array(
+					'title' => __('Icon:', 'siyalude'),
+					'type'=> 'text',
+					'description' => __('This is the icon url for payemnt gateway', 'siyalude'),
+					'default' => __('ACCOSA-PG', 'siyalude')),
 
 				'description' => array(
 					'title' => __('Description:', 'siyalude'),
@@ -145,7 +152,7 @@ function woocommerce_siyalude_accosapg_init(){
 		}
 
 		/**
-		 *  There are no payment fields for payu, but we want to show the description if set.
+		 *  There are no payment fields for ACCOSAPG, but we want to show the description if set.
 		 **/
 		function payment_fields(){
 			if($this->description) echo wpautop(wptexturize($this->description));
