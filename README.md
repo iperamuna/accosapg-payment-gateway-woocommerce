@@ -26,7 +26,7 @@ ACCOSA payment gateway system is one of the most sought-after by numerous leadin
 
 Siyalude Business Solutions is proud to be partnered with Enstage Inc to develop and support this vital ecommerce solution.
 
-This plugin is brought to you by Indunil Peramuna @ git add [www.siyalude.biz](http://www.siyalude.biz/).
+This plugin is brought to you by Indunil Peramuna @ [www.siyalude.biz](http://www.siyalude.biz/).
 
 ==Features==
 
